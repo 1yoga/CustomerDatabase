@@ -1,0 +1,16 @@
+USE [CustomerLib_Kazakevich] 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE Customer_Read
+	@CustomerID INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT * FROM Customers
+	WHERE CustomerID = @CustomerID
+END
+GO

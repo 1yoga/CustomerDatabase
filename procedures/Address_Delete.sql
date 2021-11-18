@@ -1,0 +1,16 @@
+USE [CustomerLib_Kazakevich] 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE Address_Delete
+	@AddressId INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	DELETE FROM Addresses
+	WHERE AddressId = @AddressId
+END
+GO
